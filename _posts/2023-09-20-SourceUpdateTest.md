@@ -2,6 +2,7 @@
 layout: post
 title:  "소스코드를 업데이트 방법을 테스트중입니다."
 ---
+```
 // header
 
 template <typename T>
@@ -18,6 +19,8 @@ public:
 	void Enque(T t);
 	T Deque();
 };
+```
+
 ```
 //cpp
 
