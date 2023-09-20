@@ -23,3 +23,30 @@ public:
 	T Deque();
 };
 ```
+
+```c++
+//cpp
+
+template <typename T>
+void eQueue<T>::Enque(T t)
+{
+	_node<T>* newNode = new _node<T>(t);
+
+	if (Head == nullptr)
+	{
+		Head = newNode;
+	}
+	else
+	{
+		Tail = Head;
+		while (Tail != nullptr)
+		{
+			temp = Tail;
+			Tail = Tail->next;
+		}
+		Tail = newNode;
+		temp->next = Tail;
+	}
+	Length++;
+}
+```
